@@ -24,7 +24,8 @@ int main()
         cout << "\n1. For Bubble Sorting";
         cout << "\n2. For Selection Sorting";
         cout << "\n3. For Insertion Sorting";
-        cout << "\n4. Exit";
+        cout << "\n4. For To remove Duplicate element";
+        cout << "\n5. Exit";
         cout << "\nEnter your choice : ";
         cin >> choice;
 
@@ -91,6 +92,32 @@ int main()
             }
             break;
         case 4:
+            for (i = 0; i < num; i++)
+            {
+                for (j = i + 1; j < num; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp;
+                    } // End of if
+                } // End of inner loop
+            } // End of outer loop
+            cout << "\nAfter sorting array element is : \n";
+            for (i = 0; i < num; i++)
+            {
+                cout << a[i] << "  ";
+            }
+            cout << "\nArray after removing Duplicate element is : \n";
+            for (i = 0; i < num; i++)
+            {
+                if (a[i] != a[i + 1])
+                {
+                    cout << a[i] << "  ";
+                }
+            }
+        case 5:
             exit(0);
         default:
             cout << "Enter a valid choice...";
@@ -98,4 +125,4 @@ int main()
         } // End of Switch case
     } // End of while loop
     return 0;
-}   // End of main()
+} // End of main()

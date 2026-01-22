@@ -98,4 +98,4 @@ int main()
         } // End of Switch case
     } // End of while loop
     return 0;
-}   // ENd of main()
+}   // End of main()

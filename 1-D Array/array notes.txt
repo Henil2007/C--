@@ -1,0 +1,7 @@
+array : == >1 d array : 
+
+int  a[5]  = {1,2,3,4,5}
+index : 0 
+
+int  a[5] ={1,2,3} 
+cout<<a[4] ==> 

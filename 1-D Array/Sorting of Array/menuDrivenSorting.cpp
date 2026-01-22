@@ -95,7 +95,7 @@ int main()
         default:
             cout << "Enter a valid choice...";
             break;
-        }
-    }
+        } // End of Switch case
+    } // End of while loop
     return 0;
-}
+}   // ENd of main()

@@ -117,12 +117,14 @@ void ticketBooking()
 void searchMovie()
 {
     int i, id;
+    bool found = false;
     cout << "Enter movie id you want to search : ";
     cin >> id;
     for (i = 0; i < MOVIES; i++)
     {
         if (id == m[i].id)
         {
+            found = true;
             cout << "ID : " << m[i].id << endl;
             cout << "Name : " << m[i].movie << endl;
             cout << "Seat : " << m[i].seat << endl;
@@ -130,6 +132,8 @@ void searchMovie()
             break;
         }
     }
+    if (!found)
+    cout << "Movie not found!\n";
 }
 
 void displayMovies()

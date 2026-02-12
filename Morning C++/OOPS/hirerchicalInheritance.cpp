@@ -5,7 +5,12 @@ class Animal
     public:
         Animal()
         {
+            Animal(4);
             cout<<endl<<"This is default of Animal";
+        }
+        Animal(int legs)
+        {
+            cout<<endl<<"THe number of legs are : "<<legs;
         }
         void eat()
         {
@@ -17,7 +22,12 @@ class Dog : public Animal
     public:
         Dog()
         {
+            Dog(4);
             cout<<endl<<"this is first derived class of animals";
+        }
+        Dog(int legs)
+        {
+            cout<<endl<<"THe number of legs are : "<<legs;
         }
         void bark()
         {
@@ -29,7 +39,12 @@ class Cat : public Animal
     public:
         Cat()
         {
+            Cat(4);
             cout<<endl<<"Default const. of cat";
+        }
+        Cat(int legs)
+        {
+            cout<<endl<<"THe number of legs are : "<<legs;
         }
         void meow()
         {
@@ -41,7 +56,12 @@ class Goat : public Animal
     public:
         Goat()
         {
+            Goat(4);
             cout<<endl<<"Default const. of derived class Goat";
+        }
+        Goat(int legs)
+        {
+            cout<<endl<<"THe number of legs are : "<<legs;
         }
         void bla()
         {

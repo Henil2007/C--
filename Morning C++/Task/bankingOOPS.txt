@@ -1,0 +1,57 @@
+Problem Definition: Banking System using Multilevel Inheritance in C++
+Design and implement a Banking Management System in C++ that demonstrates the concept of multilevel inheritance.
+
+🎯 Objective:
+To create a program where banking operations such as account creation, deposit, withdrawal, and interest calculation are performed using a multilevel class hierarchy.
+
+🏗️ Class Structure (Multilevel Inheritance)
+Base Class: Customer
+
+Data Members:
+
+Customer Name
+
+Customer ID
+
+Member Functions:
+
+Input customer details
+
+Display customer details
+
+Derived Class 1: Account (inherits from Customer)
+
+Data Members:
+
+Account Number
+
+Account Balance
+
+Member Functions:
+
+Deposit amount
+
+Withdraw amount
+
+Display account details
+
+Derived Class 2: SavingsAccount (inherits from Account)
+
+Data Members:
+
+Interest Rate
+
+Member Functions:
+
+Calculate interest
+
+Add interest to balance
+
+Display final balance
+
+⚙️ Functional Requirements:
+Accept customer details.
+
+Create a bank account.
+
+Allow deposit and withdrawal operations.

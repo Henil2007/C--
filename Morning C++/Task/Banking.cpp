@@ -25,7 +25,7 @@ void Bank::scanCustomerDetails()
 {
     cout << endl
          << "Enter the Cuntomber ID : ";
-    cin >> custName;
+    cin >> custId;
     cout << endl
          << "Enter the cuntomber Name : ";
     cin >> custName;
@@ -71,13 +71,9 @@ void Bank::depositeAmount()
 void Bank::checkBalance()
 {
     cout << endl
-         << "CounstId" << endl
-         << "Name" << endl
-         << "Balance";
-    cout << endl
-         << custId << endl
-         << custName << endl
-         << balance;
+         << "CounstId : " << custId << endl
+         << "Name : " << custName << endl
+         << "Balance : " << balance<<endl;
 }
 int main()
 {

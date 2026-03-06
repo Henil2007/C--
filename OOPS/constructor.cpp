@@ -121,7 +121,7 @@ class Bank
 
             } // End of loop
 
-        } // End of withdraw function
+        } // End of withdraw function     
 
         void checkBalance()
         {

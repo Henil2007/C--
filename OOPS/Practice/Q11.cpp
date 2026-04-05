@@ -8,7 +8,6 @@ constructors are called and avoid duplicate Person objects.
 #include <iostream>
 using namespace std;
 
-// Base class
 class Person {
 public:
     Person() {
@@ -16,7 +15,6 @@ public:
     }
 };
 
-// Derived class 1 (virtual inheritance)
 class Student : virtual public Person {
 public:
     Student() {
@@ -24,7 +22,6 @@ public:
     }
 };
 
-// Derived class 2 (virtual inheritance)
 class Employee : virtual public Person {
 public:
     Employee() {
@@ -32,7 +29,6 @@ public:
     }
 };
 
-// Hybrid derived class
 class Intern : public Student, public Employee {
 public:
     Intern() {
@@ -40,7 +36,6 @@ public:
     }
 };
 
-// Main function
 int main() {
     Intern obj;
     return 0;
